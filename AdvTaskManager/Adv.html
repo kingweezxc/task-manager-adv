@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="Adv.css">
+</head>
+<body>
+
+<div class="intro-container">
+    <h1>Welcome to Task Manager</h1>
+    <p>Your personal assistant to help you manage and organize tasks efficiently.</p>
+    <button class="start-btn" onclick="startTaskManager()">Start</button>
+</div>
+
+<div id="task-manager-page" style="display: none;">
+    <div class="task-manager-container">
+        <h2>Task Manager</h2>
+        <ul class="task-list" id="taskList">
+            
+        </ul>
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="New task">
+            <button onclick="addTask()">Add Task</button>
+            <div class="task-actions">
+                <button onclick="deleteActiveTasks()">Delete Active Tasks</button>
+                <button onclick="deleteCompletedTasks()">Delete Completed Tasks</button>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<script src="Adv.js"></script>
+
+</body>
+</html>
